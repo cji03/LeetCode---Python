@@ -14,3 +14,11 @@ def reverse(n):
     return int(str(n)[::-1]) if int(str(n)[::-1]) < (1<<31)-1 else 0
   else:
     return -int(str(-n)[::-1]) if -int(str(-n)[::-1]) > -1<<31 else 0
+
+
+# very cool code saw on the board. 
+
+def reverse(x):
+  s = cmp(x, 0)
+  r = int(`s*x`[::-1])
+  return s*r * (r < 2**31)
