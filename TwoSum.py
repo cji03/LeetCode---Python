@@ -19,7 +19,6 @@ def twoSum(nums, target):
 def twoSum2(nums, target):
   lookUp = {}
   for index, i in enumerate(nums):
-    if i>tar
     if target - i in lookUp:
       return lookUp[target - i], index
     lookUp[i] = index
