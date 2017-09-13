@@ -9,7 +9,7 @@
 # transfer to string and use slice[::-1]
 # 32-bit  -1<<31 < n < (1<<31)-1
 
-def reverse(self, n):
+def reverse(n):
   if n>0:
     return int(str(n)[::-1]) if int(str(n)[::-1]) < (1<<31)-1 else 0
   else:
