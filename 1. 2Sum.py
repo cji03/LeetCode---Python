@@ -16,6 +16,8 @@ def twoSum(nums, target):
         return index1, index1+index2+1
 
 # O(n)
+# 将检索过的值存入map中，下面的搜索中可以直接检索map返回对应的值。
+
 def twoSum2(nums, target):
   lookUp = {}
   for index, i in enumerate(nums):
