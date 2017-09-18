@@ -14,7 +14,7 @@ class Solution(object):
     while l<r:
       if L[l]<L[r]:
         cn=L[l]*(r-l)
-        l+=1
+        l+=1   # 进一步优化的话，在这一步while判断L[l]<=L[l], l+=1, 将高度小于当前的快速过滤掉。
       else:
         cn=L[r]*(r-l)
         r-=1
