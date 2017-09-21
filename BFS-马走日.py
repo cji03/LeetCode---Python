@@ -5,7 +5,7 @@
 def bfs(n,m):
   vs, vd = [0,0,0], [n,m]
   Q = []
-  visited=[[0]*(m+1) for i in xrange(n+1)]
+  visited=[[0]*(m+1) for i in xrange(n+1)]  # 生成一个map，m行，n列
   visited[0][0] = 1
   dx=[1,1,2,2,-1,-1,-2,-2]
   dy=[2,-2,1,-1,2,-2,1,-1]
