@@ -15,20 +15,16 @@ def plusOne(nums):
 # 大多数答案都是直接操作数组的，<9直接+1，否则进一位之类的。
 ```Java
 public int[] plusOne(int[] digits) {
-        
     int n = digits.length;
     for(int i=n-1; i>=0; i--) {
         if(digits[i] < 9) {
             digits[i]++;
             return digits;
         }
-        
         digits[i] = 0;
     }
-    
     int[] newNumber = new int [n+1];
     newNumber[0] = 1;
-    
     return newNumber;
 }
 ```
