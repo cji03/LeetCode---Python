@@ -1,2 +1,2 @@
-# LeetCode---Python
-LeetCode practice by Python
+# LeetCode---Practice
+LeetCode practice by Python/JS
